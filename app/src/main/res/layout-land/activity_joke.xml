@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".joke"
+    android:background="#000000">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="All"
+            android:textAlignment="center"
+            android:textColor="#03A9F4"
+            android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/miss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="misc"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/programming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="programming"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Dark"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/pun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="pun"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/spooky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Spooky"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/christmas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="christmas"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/setup"
+        android:layout_width="344dp"
+        android:layout_height="112dp"
+        android:textAlignment="center"
+        android:textColor="#FF4081"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="165dp"
+        android:layout_height="141dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="344dp"
+        android:layout_height="112dp"
+        android:textAlignment="center"
+        android:textColor="#18FFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/copyjoke"
+        android:layout_width="165dp"
+        android:layout_height="95dp"
+        android:layout_marginRight="16dp"
+        android:padding="20dp"
+        android:text="copy"
+        android:textAlignment="center"
+        android:textColor="#F57C00"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/nextjoke"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/image2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <TextView
+        android:id="@+id/nextjoke"
+        android:layout_width="165dp"
+        android:layout_height="95dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="36dp"
+        android:padding="20dp"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textColor="#FFAB00"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
